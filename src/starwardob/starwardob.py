@@ -92,6 +92,3 @@ class StarwarDOB:
 # retrieve unix based dated of birth and age by 
 # author.unix_year
 # author.age
-
-a = StarwarDOB('5bby')
-print(a.unix_year)
