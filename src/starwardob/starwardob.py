@@ -36,6 +36,16 @@ class StarwarDOB:
         self.unix_year, self.age = self.main(starwardob)
       
 
+    
+    def dateParse(self, starDOB):
+        # Enforce starndard by removing '.' and empty space ' '
+        if '.' in starDOB.strip():
+            return starDOB.replace('.', '')
+        elif ' ' in starDOB.strip():
+            return starDOB.replace(' ', '')
+        else:
+            return starDOB
+
     def yavin_date_check(self, dt):
         #TO DO:
         # check third character from end, if the chr is number, return not support
@@ -75,7 +85,7 @@ class StarwarDOB:
         return unix_dob 
 
     def main(self, starwardob):
-        starwardob = starwardob.upper()
+        starwardob = self.dateParse(starwardob.upper())
         if self.yavin_date_check(starwardob):
             year_pre = self.get_delimeter(starwardob)
             self.unix_year = self.calculateUnixYear(year_pre)
@@ -88,7 +98,7 @@ class StarwarDOB:
 # Usage **********************
 # import the module
 # instantiate the class See Below
-# author = StarwarDOB('0aby')
+author = StarwarDOB('896B BY')
 # retrieve unix based dated of birth and age by 
-# author.unix_year
-# author.age
+print(author.unix_year)
+print(author.age)
