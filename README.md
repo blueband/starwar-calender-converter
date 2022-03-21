@@ -32,11 +32,17 @@ See following Url:
 
 
 # Versioning
-⋅⋅1 starwar-dob 3.14.post0   Released: Mar 19, 2022
+..1 starwar-dob 3.141.post0     Released mar 21, 2022 (fix date with whitespace or period within the date string)
+⋅⋅2 starwar-dob 3.14.post0   Released: Mar 19, 2022
 
 # INSTALLATION
 Get it by running this python in your working environment
-'pip install starwar-dob==3.14.post0'
+
+```python
+
+pip install starwar-dob
+
+```
 
 # USAGE
 
