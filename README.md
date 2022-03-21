@@ -6,23 +6,23 @@ Not a fan of Star War (heard about it but never watch or read any meaniful thing
 Hence, as part of Transformation processing stage, it was required that, Actor age or (as the problem state, 'find the oldest actor') should be derived.
 
 If you look at this image  (the data after Extraction/Ingestation State)
-![alt text](dob_sample.png "date_birth Section of the Database")
+![alt text](dob_sample.png "birth_year Section of the Database")
 
-You will see that date_birth was in format
+You will see that `birth_year` was in format
  45BBY
  32ABY
  etc.
 
  To understand this Date format, you should see this https://starwars.fandom.com/wiki/Battle_of_Yavin
 
- But, the simple interpreatation is that, an event, which was known as 'Battle of Yavin', was EPOCH. And all events are reference according to this battle.
+ But, the simple interpreatation is that, an event, which was known as 'Battle of Yavin', was an EPOCH in Star War. And all events are reference according to this battle.
 
  So, 78BBY means 78 years before the Battle of Yavin while
  78ABY means 78 years After the Battle of Yavin  
 
-This library was inspired by the needs to parse and convert 'date_birth' in Star war datasets made available at https://swapi.dev/api/ into human readable format
+This library was inspired by the needs to parse and convert 'birth_year' in Star war datasets made available at https://swapi.dev/api/ into human readable format
 
-**** In case of Alien Invasion from Star War, we need a quick way to parsed DOB of such alien, and this python module is doing that. 
+* In case of Alien Invasion from Star War, we need a quick way to parsed DOB of such alien, and this python module is doing that. 
 
 
 See following Url:
